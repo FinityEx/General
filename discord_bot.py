@@ -1,7 +1,8 @@
+#First discord bot I've created. Functionality is bare minimum, but it was a fun experience creating and testing it.
+
 import os
 import random
 from discord.ext import commands
-
 import discord
 from dotenv import load_dotenv
 
@@ -25,7 +26,7 @@ async def on_ready_s():
     print(f'{client.user} has connected to the following guild: {guild.name} and its ID: {guild.id}')
     
 
-@bot.command(name='create-channel')
+@bot.command(name='create-channel') #Creates a new channel on server
 @commands.has_role('admin')
 async def create_channel(ctx, channel_name='new_channel'):
     guild = ctx.guild
@@ -34,7 +35,7 @@ async def create_channel(ctx, channel_name='new_channel'):
         print(f'Creating a new channel: {channel_name}')
         await guild.create_text_channel(channel_name)
 
-@client.event
+@client.event #Greets new members with a private message
 async def on_member_join(member):
     
     await member.create_dm()

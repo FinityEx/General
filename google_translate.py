@@ -1,4 +1,4 @@
-#google translate, working only from English to Polish
+#Google translate, working only from English to Polish as I can't seem to have it working in versataile mode. 
 
 from googletrans import Translator
 import tkinter as tk
@@ -12,10 +12,11 @@ def trans():
     result.dest='pl'
     transText.set(result.text)
     print(result)
+    
 #main window
 window = tk.Tk()
 window.geometry("800x800")
-window.title("Google Translator for the poor")
+window.title("Poor man's translator.")
 
 #text variable
 text1 = tk.StringVar()

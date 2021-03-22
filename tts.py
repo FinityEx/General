@@ -1,10 +1,11 @@
-#text-too-speech
+#text-to-speech in English with GUI. App creates a file, plays it back and destroys it on reset.
+
 import tkinter as tk
 import gtts 
 import playsound as ps
 import os
 
-def play():
+def play(): 
     message = text.get()
     speech = gtts.gTTS(text = message, lang='en', slow=False)
     speech.save("playback_audio.mp3")

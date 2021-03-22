@@ -1,3 +1,5 @@
+#Simple downloader from Youtube URLs that uses Tkinter GUI.
+
 import tkinter as tk
 import pytube as yt
 

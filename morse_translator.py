@@ -1,11 +1,12 @@
-#Morse translator
+#Morse-Latin translator. 
+
 import re
 morse = {'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', "E":'.', 'F':'..-.', 'G':'--.', 'H':'....', 'I':'..', 'J':'.---', 'K':'-.-', 'L':'.-..', 'M':'--', 'N':'-.', 'O':'---', 'P':'.--.', 'R':'.-.', 'S':'...', 'T':'-', 'U':'..-', 'W':'.--', 'Y':'-.--', 'Z':'--..'}
 morse_val = list(morse.values())
 morse_key = list(morse.keys())
 
 
-s = input("Input text in lating or Morse: ").upper()
+s = input("Input text in Latin or Morse: ").upper()
     
 def ttom():   #text to morse 
     str = list(s) #split s into list of characters
@@ -30,7 +31,7 @@ def mtot(): #morse to text
         else:
             print("\nwrong symbol: ", x)
                 
-if '-' in s:
+if '-' in s: #decides which mode to use based on dash occurence in string. Buggy way to use, but the only one I came up with so far.
     mtot()
 else:
     ttom()
