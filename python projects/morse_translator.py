@@ -31,7 +31,7 @@ def mtot(): #morse to text
         else:
             print("\nwrong symbol: ", x)
                 
-if '-' in s: #decides which mode to use based on dash occurence in string. Buggy way to use, but the only one I came up with so far.
-    mtot()
-else:
+if s[0] in morse_key: #s[0] is user input's first character
     ttom()
+else:
+    mtot()
