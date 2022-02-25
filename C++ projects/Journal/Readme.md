@@ -15,3 +15,6 @@ To do:
 -GUI
 
 -Features expansion
+
+
+**application requires sqlite3.dll file in executable's path**
