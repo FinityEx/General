@@ -12,6 +12,8 @@ To do:
 
 -Code optimalisation
 
+-Exception handling
+
 -GUI
 
 -Features expansion
