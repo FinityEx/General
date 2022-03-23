@@ -3,7 +3,7 @@
 #include <boost/random.hpp>
 #include <boost/random/random_device.hpp>
 
-
+//returns random number between 0 and 2
 unsigned int random_number() {
 	boost::random::random_device dev;
 	boost::random::mt19937 rng(dev);
