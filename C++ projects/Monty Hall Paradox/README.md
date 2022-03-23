@@ -15,7 +15,7 @@ _More on that topic:_ [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_probl
 
 
 
-This program runs a simulation of this game for both choices (with doors switched and not switched) as many times as user's input. 
-Due to implemented randomness, this program is an empirical proof that Vos Savant's advice to switch the doors was right.
+The program runs a simulation of that game for both choices (with doors switched and without) as many times as user's input requires. 
+Due to implemented random number generator, this program is an empirical proof that Vos Savant's advice to switch the doors was reasonable.
 
 ![image](https://i.imgur.com/P3GcCip.png)
